@@ -1,0 +1,21 @@
+# folder
+# windows
+json_folder: "D:/data/autonomous_ets2_data/json"
+img_folder: "D:/data/autonomous_ets2_data/img"
+csv_folder: "D:/data/autonomous_ets2_data/csv"
+img_ext: ".jpg"
+model_folder: "D:/data/autonomous_ets2_data/model"
+resize_H: 66
+resize_W: 200
+BATCH_SIZE: 32
+# Controller params
+MAX_JOY_VAL: 32768 # 2^15
+MAX_TRIG_VAL: 256 # 2^ 8
+
+
+# model params
+label_columns: ['userThrottle', 'userBrake', 'userLeftTurn', 'userRightTurn', 'userCruiseControlTrigger', 'userLeftTurnTrigger', 'userRightTurnTrigger']
+keys: ['w', 's', 'a', 'd', 'c', 'q', 'e']
+clfThreshold: [0.1, 0.8, 0.15, 0.20, 0.5, 0.5, 0.5] #0.0001, 0.00001]
+
+model_name: '5fps'
