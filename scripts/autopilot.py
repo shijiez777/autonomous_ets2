@@ -8,7 +8,7 @@ import sys
 sys.path.append(os.path.join(fPath, ".."))
 from ets2drive.helpers import read_yaml
 from ets2drive.classifier import Classifier
-from ets2drive.controller import Keyboard
+from ets2drive.simController import Keyboard
 
 # fps
 model_name = '5fps'
