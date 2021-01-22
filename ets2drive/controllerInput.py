@@ -32,23 +32,23 @@ class XboxController(object):
         self.DownDPad = 0
         self.stateDict = {'steer': 0, 'throttle': 0, 'brake': 0}
 
-
         self._monitor_thread = threading.Thread(target=self._monitor_controller, args=())
         self._monitor_thread.daemon = True
         self._monitor_thread.start()
 
 
     def read(self):
-        self.stateDict['steer'] = self.LeftJoystickX
-        self.stateDict['throttle'] = self.RightTrigger
-        self.stateDict['brake'] = self.LeftTrigger
+        # self.stateDict['steer'] = self.LeftJoystickX
+        # self.stateDict['throttle'] = self.RightTrigger
+        # self.stateDict['brake'] = self.LeftTrigger
         # x = self.LeftJoystickX
         # y = self.LeftJoystickY
         # a = self.A
         # b = self.X # b=1, x=2
         # rb = self.RightBumper
-        return self.stateDict
-
+        
+        # return self.stateDict
+        return [self.LeftJoystickX, self.RightTrigger, self.LeftTrigger]
 
     def _monitor_controller(self):
         while True:

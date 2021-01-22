@@ -3,12 +3,14 @@
 json_folder: "D:/data/autonomous_ets2_data/json"
 img_folder: "D:/data/autonomous_ets2_data/img"
 csv_folder: "D:/data/autonomous_ets2_data/csv"
+raw_data_folder: "D:/data/gta5_data/raw"
+balanced_data_folder: "D:/data/gta5_data/balanced"
 img_ext: ".jpg"
 model_folder: "D:/data/autonomous_ets2_data/model"
 resize_H: 66
 resize_W: 200
 BATCH_SIZE: 32
-FPS: 8
+FPS: 30
 
 # Controller params
 MAX_JOY_VAL: 32768 # 2^15
